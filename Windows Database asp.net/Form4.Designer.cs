@@ -33,7 +33,7 @@
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnaddnew = new System.Windows.Forms.Button();
-            this.textprice = new System.Windows.Forms.TextBox();
+            this.textsalary = new System.Windows.Forms.TextBox();
             this.textname = new System.Windows.Forms.TextBox();
             this.textid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +49,7 @@
             this.btndelete.TabIndex = 21;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnsearch
             // 
@@ -58,6 +59,7 @@
             this.btnsearch.TabIndex = 20;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // btnupdate
             // 
@@ -67,6 +69,7 @@
             this.btnupdate.TabIndex = 19;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btnsave
             // 
@@ -76,6 +79,7 @@
             this.btnsave.TabIndex = 18;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnaddnew
             // 
@@ -86,12 +90,12 @@
             this.btnaddnew.Text = "Add New";
             this.btnaddnew.UseVisualStyleBackColor = true;
             // 
-            // textprice
+            // textsalary
             // 
-            this.textprice.Location = new System.Drawing.Point(109, 142);
-            this.textprice.Name = "textprice";
-            this.textprice.Size = new System.Drawing.Size(100, 20);
-            this.textprice.TabIndex = 16;
+            this.textsalary.Location = new System.Drawing.Point(109, 142);
+            this.textsalary.Name = "textsalary";
+            this.textsalary.Size = new System.Drawing.Size(100, 20);
+            this.textsalary.TabIndex = 16;
             // 
             // textname
             // 
@@ -112,9 +116,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(35, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Price";
+            this.label3.Text = "Salary";
             // 
             // label2
             // 
@@ -128,7 +132,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 41);
+            this.label1.Location = new System.Drawing.Point(50, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 11;
@@ -138,13 +142,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 312);
+            this.ClientSize = new System.Drawing.Size(477, 337);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnaddnew);
-            this.Controls.Add(this.textprice);
+            this.Controls.Add(this.textsalary);
             this.Controls.Add(this.textname);
             this.Controls.Add(this.textid);
             this.Controls.Add(this.label3);
@@ -165,7 +169,7 @@
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnaddnew;
-        private System.Windows.Forms.TextBox textprice;
+        private System.Windows.Forms.TextBox textsalary;
         private System.Windows.Forms.TextBox textname;
         private System.Windows.Forms.TextBox textid;
         private System.Windows.Forms.Label label3;
